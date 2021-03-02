@@ -1,0 +1,97 @@
+$color-primary: #43593c;
+$color-secondary: #d55127;
+$color-green-light: #add491;
+
+.main-container-wrapper {
+    header {
+        .navbar-brand {
+            width: auto !important;
+            position: static !important;
+        }
+
+        .logo {
+            height: auto;
+        }
+
+        .right.searchbar {
+            padding-left: 0 !important;
+        }
+
+        .vc-small-screen .searchbar {
+            padding-left: 20px !important;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .main-content-wrapper .vc-header > div.vc-small-screen .right-vc-header > a {
+        display: block;
+        padding: 0;
+    }
+
+    .main-content-wrapper .vc-header > div.vc-small-screen .hamburger-wrapper .hamburger {
+        top: auto;
+    }
+
+    .main-content-wrapper .vc-header > div.vc-small-screen .hamburger-wrapper {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.select-icon-container {
+    height: auto !important;
+}
+
+// override header bg green
+.main-container-wrapper {
+    header {
+        &.sticky-header {
+            background-color: $color-green-light;
+        }
+
+        .left-wrapper {
+            display: flex;
+            align-items: center;
+            height: 100%;
+
+            a {
+                color: #fff !important;
+                padding: 0;
+                height: auto;
+            }
+
+            .mini-cart-container {
+                padding: 0 17px;
+                height: auto;
+
+                .mini-cart-content {
+                    i, .cart-text {
+                        color: #fff;
+                    }
+                }
+
+                .rango-arrow-down {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.hover-block {
+    &:hover {
+        display: block !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-content-wrapper .vc-header {
+        background-color: $color-green-light;
+    }
+
+    .main-content-wrapper .vc-header > div.vc-small-screen .hamburger-wrapper .hamburger,
+    .main-content-wrapper .vc-header > div.vc-small-screen .right-vc-header a {
+        color: #fff !important;
+    }
+}

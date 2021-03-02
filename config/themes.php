@@ -5,9 +5,9 @@ return [
 
     'themes' => [
         'default' => [
-            'views_path' => 'resources/themes/default/views',
+            'views_path'  => 'resources/themes/default/views',
             'assets_path' => 'public/themes/default/assets',
-            'name' => 'Default'
+            'name'        => 'Default',
         ],
 
         // 'bliss' => [
@@ -18,10 +18,17 @@ return [
         // ]
 
         'velocity' => [
-            'views_path' => 'resources/themes/velocity/views',
+            'views_path'  => 'resources/themes/velocity/views',
             'assets_path' => 'public/themes/velocity/assets',
-            'name' => 'Velocity',
-            'parent' => 'default'
+            'name'        => 'Velocity',
+            'parent'      => 'default',
+        ],
+
+        'keranjangoleh2' => [
+            'views_path'  => 'resources/themes/keranjangoleh2/views',
+            'assets_path' => 'public/themes/keranjangoleh2/assets',
+            'name'        => 'Keranjang Oleh2',
+            'parent'      => 'default',
         ],
     ],
 
@@ -29,9 +36,9 @@ return [
 
     'admin-themes' => [
         'default' => [
-            'views_path' => 'resources/admin-themes/default/views',
+            'views_path'  => 'resources/admin-themes/default/views',
             'assets_path' => 'public/admin-themes/default/assets',
-            'name' => 'Default'
-        ]
-    ]
+            'name'        => 'Default',
+        ],
+    ],
 ];
